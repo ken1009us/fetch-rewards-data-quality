@@ -63,6 +63,6 @@ I believe that addressing these data quality issues and preparing for scaling ch
 Looking forward to your thoughts and any additional insights you might have. Thank you!
 
 
-Best regards,
-Shu-Hao Wu
-Analytics Engineer
+Best regards, \
+Shu-Hao Wu \
+Analytics Engineer \
