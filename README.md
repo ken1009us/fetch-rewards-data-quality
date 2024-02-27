@@ -57,3 +57,55 @@ Identifies duplicate entries in the datasets to avoid redundancy and ensure the 
 #### Consistency
 
 Validates the formats of data entries, especially for dates and identifiers, to maintain consistency across the datasets.
+
+```bash
+❯ python3 data-quality-evaluation.py
+
+2024-02-26 22:53:51,424 - INFO - ------ Users Dataset ------
+2024-02-26 22:53:51,425 - INFO - Missing values in users dataset:
+_id              0
+active           0
+createdDate      0
+lastLogin       62
+role             0
+signUpSource    48
+state           56
+dtype: int64
+2024-02-26 22:53:51,427 - INFO - Duplicate IDs in users dataset: 283
+
+
+2024-02-26 22:53:51,450 - INFO - ------ Receipts Dataset ------
+2024-02-26 22:53:51,450 - INFO - Missing values in receipts dataset:
+_id                          0
+bonusPointsEarned          575
+bonusPointsEarnedReason    575
+createDate                   0
+dateScanned                  0
+finishedDate               551
+modifyDate                   0
+pointsAwardedDate          582
+pointsEarned               510
+purchaseDate               448
+purchasedItemCount         484
+rewardsReceiptItemList     440
+rewardsReceiptStatus         0
+totalSpent                 435
+userId                       0
+dtype: int64
+2024-02-26 22:53:51,452 - INFO - Duplicate IDs in receipts dataset: 0
+2024-02-26 22:53:51,453 - INFO - Inconsistent date formats in receipts dataset: 671
+
+
+2024-02-26 22:53:51,456 - INFO - ------ Brands Dataset ------
+2024-02-26 22:53:51,457 - INFO - Missing values in brands dataset:
+_id               0
+barcode           0
+category        155
+categoryCode    650
+cpg               0
+name              0
+topBrand        612
+brandCode       234
+dtype: int64
+2024-02-26 22:53:51,458 - INFO - Duplicate IDs in brands dataset: 0
+```
