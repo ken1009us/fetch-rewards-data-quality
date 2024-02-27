@@ -65,4 +65,4 @@ Looking forward to your thoughts and any additional insights you might have. Tha
 
 Best regards, \
 Shu-Hao Wu \
-Analytics Engineer \
+Analytics Engineer
